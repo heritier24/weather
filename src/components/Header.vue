@@ -5,7 +5,7 @@
         <a href="index.html" class="branding">
           <img src="assets/images/logo.png" alt="" class="logo" />
           <div class="logo-type">
-            <h1 class="site-title">Company name</h1>
+            <h1 class="site-title">Weather </h1>
             <small class="site-description">tagline goes here</small>
           </div>
         </a>
@@ -17,7 +17,7 @@
           </button>
           <ul class="menu">
             <li class="menu-item current-menu-item">
-              <a href="index.html">Home</a>
+              <a href="/">Home</a>
             </li>
             <li class="menu-item"><a href="news.html">News</a></li>
             <li class="menu-item">
