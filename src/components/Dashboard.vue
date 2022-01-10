@@ -16,7 +16,7 @@
           <div class="today forecast">
             <div class="forecast-header">
               <div class="day"> {{ dateBuilder() }}</div>
-              <div class="date">6 Oct</div>
+              <div class="date">Date</div>
             </div>
             <!-- .forecast-header -->
             <div class="forecast-content">
@@ -129,10 +129,12 @@ export default {
   },
   methods: {
     getWeather(){
+      this.$Progress.start()
       fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
       .then(res=> {
         return res.json();
       }).then(this.setResults);
+      this.$Progress.finish()
     },
     setResults (results){
       this.weather = results;
