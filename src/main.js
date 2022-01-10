@@ -4,11 +4,20 @@ import router from './router'
 import store from './store'
 
 import VueProgressBar from 'vue-progressbar'
+import 'vuejs-noty/dist/vuejs-noty.css'
+
+import VueNoty from 'vuejs-noty'
+
+Vue.use(VueNoty, {
+  timeout: 4000,
+  progressBar: true,
+  layout: 'topRight'
+})
 
 Vue.use(VueProgressBar, {
-  color: 'red',
+  color: 'pink',
   failedColor: 'red',
-  height: '2px'
+  thickness: '5px'
 })
 
 Vue.config.productionTip = false
