@@ -3,6 +3,7 @@
     <div class="site-content">
       <Header />
        <router-view/>
+       <vue-progress-bar></vue-progress-bar>
     </div>
    
   </div>
