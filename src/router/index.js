@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Dashboard.Vue'
-import Home from '../components/Dashboard.vue'
+import Home from '../views/Dashboard.vue'
 
 Vue.use(VueRouter)
 
